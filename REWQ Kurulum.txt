@@ -1,0 +1,169 @@
+sudo su
+
+--------------------------------------PHP 5.4 - FPM + APC
+
+	sudo apt-get install python-software-properties
+
+	sudo add-apt-repository ppa:ondrej/php5
+
+	sudo apt-get update
+
+	sudo apt-get install php5-common php5-mysql php5-xmlrpc php5-cgi php5-curl php5-gd php5-cli php5-fpm php-apc php-pear php5-dev php5-imap php5-mcrypt
+
+
+
+
+
+------------------------------------ percona
+
+	gpg --keyserver hkp://keys.gnupg.net --recv-keys 1C4CBDCDCD2EFD2A
+
+	gpg -a --export CD2EFD2A | apt-key add -
+
+	echo 'deb http://repo.percona.com/apt precise main' >> /etc/apt/sources.list
+
+	echo 'deb-src http://repo.percona.com/apt precise main' >> /etc/apt/sources.list
+
+
+	echo 'Package: *' >> /etc/apt/preferences.d/00percona.pref
+	echo 'Pin: release o=Percona Development Team' >> /etc/apt/preferences.d/00percona.pref
+	echo 'Pin-Priority: 1001' >> /etc/apt/preferences.d/00percona.pref
+
+	apt-get update
+
+	apt-get install percona-server-server-5.5 percona-server-client-5.5 mysqltuner
+
+
+
+
+
+
+
+------------------------------------ NGINX 1.2.7
+
+	sudo apt-get install python-software-properties
+
+	sudo add-apt-repository ppa:nginx/stable
+
+	sudo apt-get update
+
+	sudo apt-get install nginx
+
+
+TODO
+listen 80;
+listen [::]:80 ipv6only=on default_server;
+
+NEXT VER  git clone https://github.com/pagespeed/ngx_pagespeed.gi
+
+------------------------------------ WEBMIN
+
+sudo apt-get -f install
+
+sudo apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
+
+sudo wget http://prdownloads.sourceforge.net/webadmin/webmin_1.630_all.deb
+
+sudo dpkg --install webmin_1.630_all.deb
+
+
+------------------------------------ VIRTUALMIN
+
+sudo wget http://software.virtualmin.com/gpl/scripts/install.sh
+
+sudo chmod u+x install.sh
+
+./install.sh
+
+sudo apt-get install webmin-virtualmin-nginx webmin-virtualmin-nginx-ssl
+
+
+
+
+
+------------------------------------- DRUSH
+
+ sudo apt-get install drush
+
+ sudo drush dl drush --destination='/usr/share'
+
+
+
+
+
+------------------------------------- DRUPAL
+
+
+drush dl drupal
+
+mv drupal-7.22/* drupal-7.22/.htaccess drupal-7.22/.gitignore ./
+
+rmdir drupal-7.22
+
+chmod 777 -R /$SITE_DIR
+
+chown -R $USER:www-data /$SITE_DIR
+
+drush dl ctools views admin_menu module_filter token transliteration pathauto omega omega_tools delta devel features entity libraries link jquery_update globalredirect field_group context l10n_update variable taxonomy_menu strongarm quicktabs
+
+
+
+
+------------------------------------- MIDNIGHT COMMANDER
+ apt-get install mc
+
+ 
+ ------------------------------------- RUBY
+
+sudo apt-get install ruby1.9.3
+
+sudo update-alternatives --config ruby
+
+sudo update-alternatives --config gem
+
+
+------------------------------------- GUARD - SASS COFFEE ...
+ 
+gem install guard
+
+gem install rb-fsevent
+
+gem install guard-sass
+
+gem install guard-coffeescript
+
+gem install guard-livereload
+
+
+------------------------------------- PhpMyAdmin
+
+ln -s /usr/share/phpmyadmin/ /$SITE_DIR
+
+
+------------------------------------- Redis
+
+cd
+
+apt-get install redis-server
+
+
+	src/redis-server
+
+		$ src/redis-cli
+		redis> set foo bar
+		OK
+		redis> get foo
+		"bar"
+
+------------------------------------- Node.JS
+
+------------------------------------- Varnish
+
+------------------------------------- SOLR
+
+sudo apt-get install solr-tomcat
+
+
+------------------------------------- SOLR
+
+------------------------------------- SOLR
