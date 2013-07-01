@@ -1,0 +1,47 @@
+YAPILACAKLAR:
+
+SCRIPT ÇATISI: 
+	- Sessiz kurulum için gerekli input alanları açılacak.
+	- Değişkenler kullanılarak sessiz kurulum yapılması.
+	- ADIM sıralamasını yenile.
+		1-nginx
+		2-percona
+		3-php
+		4-phpmyadmin
+		5-drush
+		6-webmin
+		7-configure
+		8-security
+		9-init
+
+NGINX
+	- Drupal için conf dosyaları gerekli.
+	- Pagespeed + HIZLI SSL ?!? ile gelsin.
+	- /var/www klasörüne boş bir site ekle.
+
+PERCONADB
+	- Sessiz kurulum yapmıyor.
+	- Şifreler ne olacak?
+
+	POSTFIX konusu: 
+		- Açıklığa kavuşturulacak: 
+		- Lazım mı? 
+		- Lazımsa nedir? 
+		- Nasıl kullanılır?
+		- Sessiz kurulum mümkün mü?
+
+PHP
+	- Yüklenen kütüphaneler doğru mu?
+		- Fazla mı?
+		- Ne eklenebilir?
+
+WEBMIN
+	# Nginx Modülü yok. 
+		
+	
+SECURITY
+	- SSH portunu değiştir.
+	- root erişimini kısıtla.
+	- IPTABLES kur.
+	- Nginx ayarlarının üzerinden geç.
+	- PHP-FPM pool yapılandırması oluştur.

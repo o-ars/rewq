@@ -5,3 +5,5 @@
 #
 
 echo "6 - PHPMYADMIN"
+
+# ln -s /usr/share/phpmyadmin/ /$SITE_DIR

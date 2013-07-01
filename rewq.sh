@@ -7,15 +7,33 @@
 #
 # Create Global Options
 
-## New Root User
-#REWQ_ROOT_USER="ninja"
+        ## New Root User
+        #REWQ_ROOT_USER="ninja"
 
-## Root User Password
-#REWQ_ROOT_USER_PASSWORD="ninjapass"
+        ## Root User Password
+        #REWQ_ROOT_USER_PASSWORD="ninjapass"
 
-## MariaDB Root Password
-#REWQ_MARIADB_PASSWORD="dbpass"
-#sh rewq_lib/rewq_prepare.sh
+        ## MariaDB Root Password
+        #REWQ_MARIADB_PASSWORD="dbpass"
+        #sh rewq_lib/rewq_prepare.sh
+
+        ## Hostname Option
+        # KURUL_HOSTNAME="host.drupaldevelop.com"
+
+        ## Timezone Option
+        # KURUL_TIMEZONE="Europe/Istanbul"
+
+        ## Custom SSH Option
+        # KURUL_SSH_PORT="3636"
+
+        ## New Root User
+        # KURUL_ROOT_USER="drupaldeveloper"
+
+        ## Root User Password
+        # KURUL_ROOT_USER_PASSWORD="vagrant"
+
+        ## MariaDB Root Password
+        # KURUL_MARIADB_PASSWORD="susam"
 
 #if hash apache 2>/dev/null; then
 #        tput setaf 2

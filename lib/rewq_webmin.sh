@@ -8,6 +8,8 @@ sudo apt-get install -y perl libnet-ssleay-perl openssl libauthen-pam-perl libpa
 cd /tmp
 sudo wget http://prdownloads.sourceforge.net/webadmin/webmin_1.630_all.deb
 sudo dpkg --install webmin_1.630_all.deb
+git clone https://github.com/o-ars/webmin_nginx.git
+sudo /usr/share/webmin/install-module.pl /tmp/webmin_nginx/webmin_betternginx_module.wbm
 cd -
 
 clear
