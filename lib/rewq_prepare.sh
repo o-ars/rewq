@@ -10,7 +10,11 @@ tput setaf 6
 tput sgr0
 sleep 1
 
+
+
 sudo apt-get autoremove -y
+
+
 
 PACKAGE_1=apache
 dpkg -l $PACKAGE_1 >/dev/null 2>&1 ;

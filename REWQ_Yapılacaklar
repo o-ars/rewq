@@ -3,7 +3,7 @@ YAPILACAKLAR:
 SCRIPT ÇATISI: 
 	- Sessiz kurulum için gerekli input alanları açılacak.
 	- Değişkenler kullanılarak sessiz kurulum yapılması.
-	- ADIM sıralamasını yenile.
+	+ ADIM sıralamasını yenile.
 		1-nginx
 		2-percona
 		3-php
@@ -36,7 +36,7 @@ PHP
 		- Ne eklenebilir?
 
 WEBMIN
-	# Nginx Modülü yok. 
+	+ Nginx Modülü yok. 
 		
 	
 SECURITY

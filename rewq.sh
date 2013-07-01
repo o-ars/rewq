@@ -61,16 +61,16 @@ function func_php {
 sh lib/rewq_php.sh
 }
 
-function func_webmin {
-sh lib/rewq_webmin.sh
+function func_phpmyadmin {
+sh lib/rewq_phpmyadmin.sh
 }
 
 function func_drush {
 sh lib/rewq_drush.sh
 }
 
-function func_phpmyadmin {
-sh lib/rewq_phpmyadmin.sh
+function func_webmin {
+sh lib/rewq_webmin.sh
 }
 
 function func_security {
@@ -90,9 +90,9 @@ whiptail --title " 7 GATES ------- REWQ Installer" --checklist --separate-output
 "SERVER" "1.4.0" on \
 "DB" "5.5.X" on \
 "PHP" "5.4.X + FPM + APC x.x.x" on \
-"PANEL" "Webmin 1.630" on \
-"DRUSH" "Drush 5.9" on \
 "DB_ADMIN" "PhpMyAdmin X.X.X" on \
+"DRUSH" "Drush 5.9" on \
+"PANEL" "Webmin 1.630" on \
 "SECURITY" "Iptables" on \
 "CONFIGURE" "Configure Services" on 2>results
 
@@ -107,15 +107,15 @@ do
                 ;;
                 PHP) func_php
                 ;;
-                PANEL) func_webmin
+                DB_ADMIN) func_phpmyadmin
                 ;;
                 DRUSH) func_drush
                 ;;
-                DB_ADMIN) func_phpmyadmin
-                ;;
-                SECURITY) func_security
+                PANEL) func_webmin
                 ;;
                 CONFIGURE) func_configure
+                ;;
+                SECURITY) func_security
                 ;;
                 *)
                 ;;

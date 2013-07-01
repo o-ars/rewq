@@ -4,26 +4,26 @@
 # A Modern Drupal Develop Platform
 #
 
-sudo apt-get install -y drush
-sudo drush dl -y drush --destination='/usr/share'
+
 
 clear
 
 tput setaf 6
-    echo "STEP"
+    echo "DRUSH installing"
 tput sgr0
 
 sleep 1
 
 
 
-# DO SOMETHING
+sudo apt-get install -y drush
+sudo drush dl -y drush --destination='/usr/share'
+
+
 
 PACKAGE_1=drush
 
 dpkg -l $PACKAGE_1 >/dev/null 2>&1 ;
-
-
 
 if [  "$?" = 0 ] 
 then

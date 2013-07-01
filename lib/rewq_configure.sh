@@ -18,6 +18,8 @@ sleep 1
 
 updatedb
 
+
+
 # Ensure Services Boot on Startup
 chkconfig --add nginx && chkconfig nginx on
 chkconfig --add php-fpm && chkconfig php-fpm on

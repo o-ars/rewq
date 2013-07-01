@@ -12,6 +12,8 @@ tput sgr0
 
 sleep 1
 
+
+
 sudo apt-get install  -y python-software-properties
 
 sudo add-apt-repository -y ppa:nginx/stable
@@ -20,7 +22,7 @@ sudo apt-get update -y
 
 sudo apt-get install -y nginx
 
-echo "2 - SERVER"
+
 
 PACKAGE_1=nginx
 dpkg -l $PACKAGE_1 >/dev/null 2>&1 ;

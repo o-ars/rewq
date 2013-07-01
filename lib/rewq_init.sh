@@ -12,6 +12,8 @@ tput sgr0
 
 sleep 1
 
+
+
 service nginx restart
 service php5-fpm restart
 service mysql restart
